@@ -1,5 +1,6 @@
 <% if current_user %>
 	<%= t(:homepage_logged_in) %>
+    <iframe width="450" height="250" style="border: 1px solid #cccccc;" src="http://thingspeak.appsdynamic.com/channels/1/charts/1?timescale=1&type=column"></iframe>
 <% else %>
 	<%= t(:homepage) %>
 <% end %>
