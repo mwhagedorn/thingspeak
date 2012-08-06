@@ -7,17 +7,6 @@
 	<%= t(:charts) %>
 </h2>
 
-<%= render :partial => 'config',
-	:locals => {
-		:title => t(:chart_example),
-		:src => "https://api.thingspeak.com/channels/3/charts/1",
-		:options => '&timescale=60&round=2',
-		:index => 0,
-		:width => @width,
-		:height => @height
-	}
-%>
-
 <h3><%= t(:chart_owned) %></h3>
 
 <% @channel.attribute_names.each do |attr| %>
